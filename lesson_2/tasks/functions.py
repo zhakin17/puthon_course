@@ -3,9 +3,7 @@ def get_min(x, y):
 
 
 def get_min_without_arguments():
-    """
-        raise TypeError exception with message
-    """
+    raise TypeError('misseargument')
 
 
 
