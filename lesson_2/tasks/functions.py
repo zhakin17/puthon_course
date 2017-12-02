@@ -13,21 +13,24 @@ def get_min_with_one_argument(x):
 
 
 def get_min_with_many_arguments(*args):
-    """
-        return smallest number among args
-    """
+
+
+    return min(args)
+
 
 
 def get_min_with_one_or_more_arguments(first, *args):
-    """
-        return smallest number among first + args
-    """
+    return min((first, ) + args)
 
 
 def get_min_bounded(*args, low, high):
-    """
-        return smallest number among args bounded by low & high
-    """
+
+    res = float('inf')
+    for item in args:
+        if res > item and low < item < high:
+            res = item
+
+    return  res
 
 
 def make_min(*, low, high):
