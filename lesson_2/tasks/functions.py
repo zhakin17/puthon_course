@@ -1,13 +1,12 @@
 def get_min(x, y):
-    """
-        return min number among a and b
-    """
+    return x if x < y else y
 
 
 def get_min_without_arguments():
     """
         raise TypeError exception with message
     """
+
 
 
 def get_min_with_one_argument(x):
